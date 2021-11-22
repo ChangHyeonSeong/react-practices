@@ -3,5 +3,3 @@ const App = function() {
     app.textContent = 'Hello World';
     return app;
 }
-
-export { App }
