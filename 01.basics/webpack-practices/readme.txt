@@ -12,3 +12,16 @@ ex04 05
 css 로더 설치 
     $ npm i -D css-loader style-loader sass-loader node-sass 
 
+
+$ npm i -D 
+            webpack 
+            webpack-cli
+            webpack-dev-server
+            style-loader
+            css-loader 
+            sass-loader 
+            node-sass
+
+$ create-reate-app   -> 위에 패키지들을 알아서 설치
+
+
