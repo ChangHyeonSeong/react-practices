@@ -1,10 +1,13 @@
 import React from 'react';
 
-export default function() {
+export default function({name}) {
     
     return (
-        <div className='Task'>
-          
-        </div>
+        <li className='TaskList__Task'>
+            <input type='checkbox' checked='false' />
+                { name }
+            <a href='#' className='TaskList__Task--remove'></a>
+        </li>
+               
     )
 }

@@ -1,11 +1,15 @@
 import React from 'react';
 import Task from './Task'
 
-export default function() {
+export default function({tasks}) {
     
     return (
         <div className='TaskList'>
-            <Task />
+            <ul>
+                {tasks.map((task) => <Task 
+                                        key={task.no} 
+                                        name={task.name} /> )}
+            </ul>
         </div>
     )
 }

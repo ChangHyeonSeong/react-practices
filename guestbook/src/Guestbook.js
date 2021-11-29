@@ -1,10 +1,10 @@
 import React from 'react';
-import KanbanBoard from './KanbanBoard';
+
 
 export default function() {
     return (
-        <div id='App'>
-          <KanbanBoard />
+        <div className='Guestbook'>
+          <h1>Guestbook</h1>
         </div>
     )
 }
