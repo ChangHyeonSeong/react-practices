@@ -5,7 +5,14 @@ export default function({name, message}) {
         <li className="Guestbook__List__Item">
             <strong>{ name }</strong>
             <p>
-                { message }
+                { 
+                   message
+                    .replace(/<br\/>/g, '\n')
+                    .split('\n')
+                    .map( line => {  
+                        return (<span>{line}<br/></span>) 
+                    }) 
+                }
             </p>
             <strong></strong>
             <a href=''>삭제</a>
